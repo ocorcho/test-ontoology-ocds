@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Contract" "base:Item" "base:Tender" "base:Document" "base:ContactPoint" "base:Address" ; /*classes style*/
+	"base:ContactPoint" -> "sch:ContactPoint" [ label = "rdfs:subClassOf" ];
+	"base:Item" -> "gr:Offering" [ label = "rdfs:subClassOf" ];
+	"base:Tender" -> "pc:Tender" [ label = "rdfs:subClassOf" ];
+	"base:Address" -> "sch:PostalAddress" [ label = "rdfs:subClassOf" ];
+	"base:Document" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"base:Contract" -> "pc:Contract" [ label = "rdfs:subClassOf" ];
+
+}

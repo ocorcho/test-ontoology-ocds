@@ -1,0 +1,729 @@
+{
+  "@context" : {
+    "budgetUri" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budgetUri",
+      "@type" : "@id"
+    },
+    "awardTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Address"
+    },
+    "TenderStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#TenderStatus"
+    },
+    "budgetId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budgetId"
+    },
+    "BusinessEntity" : {
+      "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+    },
+    "releaseLanguage" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#releaseLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Unit" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Unit"
+    },
+    "lotId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#lotId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "awardDocuments" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDocuments",
+      "@type" : "@id"
+    },
+    "documentUrl" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentUrl",
+      "@type" : "@id"
+    },
+    "amendmentDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#amendmentDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Period" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Period"
+    },
+    "awardPeriod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardPeriod",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "documentId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentId"
+    },
+    "identifierScheme" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierScheme",
+      "@type" : "@id"
+    },
+    "Release" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Release"
+    },
+    "buyer" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#buyer",
+      "@type" : "@id"
+    },
+    "startDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#startDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "awardCriteria" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardCriteria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "milestoneTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Organization" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Organization"
+    },
+    "OrganizationIdentifierScheme" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme"
+    },
+    "tenderItems" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderItems",
+      "@type" : "@id"
+    },
+    "transactionUri" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactionUri",
+      "@type" : "@id"
+    },
+    "AwardStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#AwardStatus"
+    },
+    "initiationType" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#initiationType",
+      "@type" : "@id"
+    },
+    "procuringEntity" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#procuringEntity",
+      "@type" : "@id"
+    },
+    "ItemClassificationScheme" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#ItemClassificationScheme"
+    },
+    "Planning" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Planning"
+    },
+    "budgetAmount" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budgetAmount",
+      "@type" : "@id"
+    },
+    "planningUrl" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#planningUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Budget" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Budget"
+    },
+    "contractTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ocid" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#ocid",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "additionalIdentifiers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#additionalIdentifiers",
+      "@type" : "@id"
+    },
+    "currency" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#currency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "classificationId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationId"
+    },
+    "DocumentType" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#DocumentType"
+    },
+    "faxNumber" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#faxNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "milestones" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestones",
+      "@type" : "@id"
+    },
+    "Milestone" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Milestone"
+    },
+    "contractPeriod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractPeriod",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "lotTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#lotTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "contractItems" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractItems",
+      "@type" : "@id"
+    },
+    "author" : {
+      "@id" : "http://purl.org/dc/terms/author"
+    },
+    "tenderPeriod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderPeriod",
+      "@type" : "@id"
+    },
+    "project" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#project",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tenderAmendment" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderAmendment",
+      "@type" : "@id"
+    },
+    "Contract" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Contract"
+    },
+    "transactionId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactionId"
+    },
+    "contactPointUrl" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contactPointUrl",
+      "@type" : "@id"
+    },
+    "dncpContractCode" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#dncpContractCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "contactPointName" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contactPointName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "documentTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "transactionDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "contractFollows" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractFollows",
+      "@type" : "@id"
+    },
+    "countryName" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "id" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "procurementMethodRationale" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#procurementMethodRationale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "milestoneId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneId"
+    },
+    "itemDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#itemDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "email" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "planningRationale" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#planningRationale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "suppliers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#suppliers",
+      "@type" : "@id"
+    },
+    "implementationDocuments" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#implementationDocuments",
+      "@type" : "@id"
+    },
+    "Offering" : {
+      "@id" : "http://purl.org/goodrelations/v1#Offering"
+    },
+    "ReleaseTag" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#ReleaseTag"
+    },
+    "amendmentRationale" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#amendmentRationale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "planningPrecedes" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#planningPrecedes",
+      "@type" : "@id"
+    },
+    "Award" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Award"
+    },
+    "tender" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tender",
+      "@type" : "@id"
+    },
+    "tenderId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderId"
+    },
+    "classificationDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "contractValue" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractValue",
+      "@type" : "@id"
+    },
+    "implementationMilestones" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#implementationMilestones",
+      "@type" : "@id"
+    },
+    "releaseDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#releaseDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "tenderValue" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderValue",
+      "@type" : "@id"
+    },
+    "directlyFollows" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows",
+      "@type" : "@id"
+    },
+    "tenderUrl" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "contractAmendment" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractAmendment",
+      "@type" : "@id"
+    },
+    "postalCode" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#postalCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tenderDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ContactPoint" : {
+      "@id" : "http://schema.org#ContactPoint"
+    },
+    "tenderLots" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderLots",
+      "@type" : "@id"
+    },
+    "milestoneDocuments" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneDocuments",
+      "@type" : "@id"
+    },
+    "identifierId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierId"
+    },
+    "tag" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tag",
+      "@type" : "@id"
+    },
+    "quantity" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#quantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "awardID" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardID",
+      "@type" : "@id"
+    },
+    "contractStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractStatus",
+      "@type" : "@id"
+    },
+    "Tender" : {
+      "@id" : "http://purl.org/procurement/public-contracts#Tender"
+    },
+    "implementation" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#implementation",
+      "@type" : "@id"
+    },
+    "awardURL" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "tenderFollows" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderFollows",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#address",
+      "@type" : "@id"
+    },
+    "awardPrecedes" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardPrecedes",
+      "@type" : "@id"
+    },
+    "tenderTitle" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Value" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Value"
+    },
+    "contractLots" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractLots",
+      "@type" : "@id"
+    },
+    "milestoneDateModified" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneDateModified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org#PostalAddress"
+    },
+    "Method" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Method"
+    },
+    "region" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#region",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#identifier",
+      "@type" : "@id"
+    },
+    "transactionSource" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactionSource",
+      "@type" : "@id"
+    },
+    "changes" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#changes",
+      "@type" : "@id"
+    },
+    "milestoneDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "additionalClassifications" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#additionalClassifications",
+      "@type" : "@id"
+    },
+    "organizationName" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#organizationName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "telephone" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#telephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "unitName" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#unitName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "property" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#property",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Change" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Change"
+    },
+    "contractDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "valueAmount" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#valueAmount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "locality" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#locality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "classificationScheme" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationScheme",
+      "@type" : "@id"
+    },
+    "Lot" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Lot"
+    },
+    "InitiationType" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#InitiationType"
+    },
+    "planning" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#planning",
+      "@type" : "@id"
+    },
+    "Classification" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Classification"
+    },
+    "budgetSource" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budgetSource",
+      "@type" : "@id"
+    },
+    "streetAddress" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#streetAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "tenderDocuments" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderDocuments",
+      "@type" : "@id"
+    },
+    "contracts" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contracts",
+      "@type" : "@id"
+    },
+    "documents" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documents",
+      "@type" : "@id"
+    },
+    "awardFollows" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardFollows",
+      "@type" : "@id"
+    },
+    "numberOfTenderers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#numberOfTenderers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Implementation" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Implementation"
+    },
+    "award" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#award",
+      "@type" : "@id"
+    },
+    "receiverOrganization" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#receiverOrganization",
+      "@type" : "@id"
+    },
+    "awardId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "datePublished" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "awardCriteriaDetails" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardCriteriaDetails",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "URI" : {
+      "@id" : "http://purl.org/dc/terms/URI"
+    },
+    "documentDateModified" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentDateModified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "budget" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budget",
+      "@type" : "@id"
+    },
+    "contractId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractId"
+    },
+    "legalName" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#legalName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "contractDocuments" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractDocuments",
+      "@type" : "@id"
+    },
+    "submissionMethodDetails" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#submissionMethodDetails",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "documentLanguage" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEnquiries" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#hasEnquiries",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "unit" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#unit",
+      "@type" : "@id"
+    },
+    "awardValue" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardValue",
+      "@type" : "@id"
+    },
+    "documentDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dueDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#dueDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "transactions" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactions",
+      "@type" : "@id"
+    },
+    "tenderPrecedes" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderPrecedes",
+      "@type" : "@id"
+    },
+    "classificationUri" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationUri",
+      "@type" : "@id"
+    },
+    "contactPoint" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contactPoint",
+      "@type" : "@id"
+    },
+    "PriceSpecification" : {
+      "@id" : "http://purl.org/goodrelations/v1#PriceSpecification"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "lotItems" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#lotItems",
+      "@type" : "@id"
+    },
+    "itemId" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#itemId"
+    },
+    "unitValue" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#unitValue",
+      "@type" : "@id"
+    },
+    "providerOrganization" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#providerOrganization",
+      "@type" : "@id"
+    },
+    "awardDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "enquiryPeriod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#enquiryPeriod",
+      "@type" : "@id"
+    },
+    "Document" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Document"
+    },
+    "eligibilityCriteria" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#eligibilityCriteria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "directlyPrecedes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes",
+      "@type" : "@id"
+    },
+    "awardAmendment" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardAmendment",
+      "@type" : "@id"
+    },
+    "Transaction" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Transaction"
+    },
+    "budgetDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#budgetDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ContractStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#ContractStatus"
+    },
+    "SubmissionMethod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#SubmissionMethod"
+    },
+    "former_value" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#former_value",
+      "@type" : "@id"
+    },
+    "awardStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardStatus",
+      "@type" : "@id"
+    },
+    "procurementMethod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#procurementMethod",
+      "@type" : "@id"
+    },
+    "Item" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Item"
+    },
+    "endDate" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#endDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "transactionAmount" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#transactionAmount",
+      "@type" : "@id"
+    },
+    "contractSuppliers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractSuppliers",
+      "@type" : "@id"
+    },
+    "minValue" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#minValue",
+      "@type" : "@id"
+    },
+    "submissionMethod" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#submissionMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifierUri" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierUri",
+      "@type" : "@id"
+    },
+    "AwardCriteria" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#AwardCriteria"
+    },
+    "Identifier" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Identifier"
+    },
+    "awardDescription" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "documentType" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#documentType",
+      "@type" : "@id"
+    },
+    "tenderers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderers",
+      "@type" : "@id"
+    },
+    "projectID" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#projectID"
+    },
+    "dateSigned" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#dateSigned",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "tenderStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderStatus",
+      "@type" : "@id"
+    },
+    "format" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#format",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Amendment" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#Amendment"
+    },
+    "milestoneStatus" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#milestoneStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "classification" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#classification",
+      "@type" : "@id"
+    }
+  }
+}

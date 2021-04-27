@@ -1,0 +1,792 @@
+<h2 id="overv" class="list">Schema for an Open Contracting Release: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#Address" title="http://purl.org/onto-ocds/ocds#Address">Address</a>
+   </li>
+   <li>
+      <a href="#Amendment" title="http://purl.org/onto-ocds/ocds#Amendment">Amendment</a>
+   </li>
+   <li>
+      <a href="#Award" title="http://purl.org/onto-ocds/ocds#Award">Award</a>
+   </li>
+   <li>
+      <a href="#Budget" title="http://purl.org/onto-ocds/ocds#Budget">Budget</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/goodrelations/v1#BusinessEntity" title="http://purl.org/goodrelations/v1#BusinessEntity">
+         <span>business entity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Change" title="http://purl.org/onto-ocds/ocds#Change">Change</a>
+   </li>
+   <li>
+      <a href="#Classification" title="http://purl.org/onto-ocds/ocds#Classification">Classification</a>
+   </li>
+   <li>
+      <a href="#AwardCriteria" title="http://purl.org/onto-ocds/ocds#AwardCriteria">Codelist Award Criteria</a>
+   </li>
+   <li>
+      <a href="#AwardStatus" title="http://purl.org/onto-ocds/ocds#AwardStatus">Codelist Award Status</a>
+   </li>
+   <li>
+      <a href="#ContractStatus" title="http://purl.org/onto-ocds/ocds#ContractStatus">Codelist Contract Status</a>
+   </li>
+   <li>
+      <a href="#DocumentType" title="http://purl.org/onto-ocds/ocds#DocumentType">Codelist Document Type</a>
+   </li>
+   <li>
+      <a href="#InitiationType" title="http://purl.org/onto-ocds/ocds#InitiationType">Codelist Initiation Type</a>
+   </li>
+   <li>
+      <a href="#Method" title="http://purl.org/onto-ocds/ocds#Method">Codelist Method</a>
+   </li>
+   <li>
+      <a href="#OrganizationIdentifierScheme"
+         title="http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme">Codelist Organization Identifier Scheme</a>
+   </li>
+   <li>
+      <a href="#ReleaseTag" title="http://purl.org/onto-ocds/ocds#ReleaseTag">Codelist ReleaseTag</a>
+   </li>
+   <li>
+      <a href="#SubmissionMethod" title="http://purl.org/onto-ocds/ocds#SubmissionMethod">Codelist Submission Method</a>
+   </li>
+   <li>
+      <a href="#TenderStatus" title="http://purl.org/onto-ocds/ocds#TenderStatus">Codelist Tender Status</a>
+   </li>
+   <li>
+      <a href="#ContactPoint" title="http://purl.org/onto-ocds/ocds#ContactPoint">Contact point</a>
+   </li>
+   <li>
+      <a href="#Contract" title="http://purl.org/onto-ocds/ocds#Contract">Contract</a>
+   </li>
+   <li>
+      <a href="#Document" title="http://purl.org/onto-ocds/ocds#Document">Document</a>
+   </li>
+   <li>
+      <a href="#Identifier" title="http://purl.org/onto-ocds/ocds#Identifier">Identifier</a>
+   </li>
+   <li>
+      <a href="#Implementation" title="http://purl.org/onto-ocds/ocds#Implementation">Implementation</a>
+   </li>
+   <li>
+      <a href="#Item" title="http://purl.org/onto-ocds/ocds#Item">Item</a>
+   </li>
+   <li>
+      <a href="#Lot" title="http://purl.org/onto-ocds/ocds#Lot">Lote</a>
+   </li>
+   <li>
+      <a href="#Milestone" title="http://purl.org/onto-ocds/ocds#Milestone">Milestone</a>
+   </li>
+   <li>
+      <a href="#Release" title="http://purl.org/onto-ocds/ocds#Release">Open Contracting Release</a>
+   </li>
+   <li>
+      <a href="#Organization" title="http://purl.org/onto-ocds/ocds#Organization">Organization</a>
+   </li>
+   <li>
+      <a href="#Period" title="http://purl.org/onto-ocds/ocds#Period">Period</a>
+   </li>
+   <li>
+      <a href="#Planning" title="http://purl.org/onto-ocds/ocds#Planning">Planning</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/goodrelations/v1#PriceSpecification"
+         title="http://purl.org/goodrelations/v1#PriceSpecification">
+         <span>price specification</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Tender" title="http://purl.org/onto-ocds/ocds#Tender">Tender</a>
+   </li>
+   <li>
+      <a href="#Transaction" title="http://purl.org/onto-ocds/ocds#Transaction">Transaction Information</a>
+   </li>
+   <li>
+      <a href="#Unit" title="http://purl.org/onto-ocds/ocds#Unit">Unit</a>
+   </li>
+   <li>
+      <a href="#Value" title="http://purl.org/onto-ocds/ocds#Value">Value</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#additionalClassifications"
+         title="http://purl.org/onto-ocds/ocds#additionalClassifications">Additional classifications</a>
+   </li>
+   <li>
+      <a href="#additionalIdentifiers"
+         title="http://purl.org/onto-ocds/ocds#additionalIdentifiers">Additional identifiers</a>
+   </li>
+   <li>
+      <a href="#address" title="http://purl.org/onto-ocds/ocds#address">Address</a>
+   </li>
+   <li>
+      <a href="#changes" title="http://purl.org/onto-ocds/ocds#changes">Amended fields</a>
+   </li>
+   <li>
+      <a href="#awardAmendment" title="http://purl.org/onto-ocds/ocds#awardAmendment">Award amendment</a>
+   </li>
+   <li>
+      <a href="#awardDocuments" title="http://purl.org/onto-ocds/ocds#awardDocuments">Award documents</a>
+   </li>
+   <li>
+      <a href="#awardFollows" title="http://purl.org/onto-ocds/ocds#awardFollows">
+         <span>award follows</span>
+      </a>
+   </li>
+   <li>
+      <a href="#awardID" title="http://purl.org/onto-ocds/ocds#awardID">Award ID</a>
+   </li>
+   <li>
+      <a href="#awardPeriod" title="http://purl.org/onto-ocds/ocds#awardPeriod">Award period</a>
+   </li>
+   <li>
+      <a href="#awardPrecedes" title="http://purl.org/onto-ocds/ocds#awardPrecedes">
+         <span>award precedes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#awardStatus" title="http://purl.org/onto-ocds/ocds#awardStatus">Award status</a>
+   </li>
+   <li>
+      <a href="#awardValue" title="http://purl.org/onto-ocds/ocds#awardValue">Award value</a>
+   </li>
+   <li>
+      <a href="#award" title="http://purl.org/onto-ocds/ocds#award">Awards</a>
+   </li>
+   <li>
+      <a href="#budget" title="http://purl.org/onto-ocds/ocds#budget">Budget</a>
+   </li>
+   <li>
+      <a href="#budgetAmount" title="http://purl.org/onto-ocds/ocds#budgetAmount">Budget amount</a>
+   </li>
+   <li>
+      <a href="#budgetSource" title="http://purl.org/onto-ocds/ocds#budgetSource">Budget Data Source</a>
+   </li>
+   <li>
+      <a href="#buyer" title="http://purl.org/onto-ocds/ocds#buyer">Buyer</a>
+   </li>
+   <li>
+      <a href="#classification" title="http://purl.org/onto-ocds/ocds#classification">Classification</a>
+   </li>
+   <li>
+      <a href="#classificationScheme"
+         title="http://purl.org/onto-ocds/ocds#classificationScheme">Classification scheme</a>
+   </li>
+   <li>
+      <a href="#classificationUri" title="http://purl.org/onto-ocds/ocds#classificationUri">Classification URI</a>
+   </li>
+   <li>
+      <a href="#contactPoint" title="http://purl.org/onto-ocds/ocds#contactPoint">Contact point</a>
+   </li>
+   <li>
+      <a href="#contactPointUrl" title="http://purl.org/onto-ocds/ocds#contactPointUrl">Contact point URL</a>
+   </li>
+   <li>
+      <a href="#contractAmendment" title="http://purl.org/onto-ocds/ocds#contractAmendment">Contract amendment</a>
+   </li>
+   <li>
+      <a href="#contractDocuments" title="http://purl.org/onto-ocds/ocds#contractDocuments">Contract documents</a>
+   </li>
+   <li>
+      <a href="#contractFollows" title="http://purl.org/onto-ocds/ocds#contractFollows">
+         <span>contract follows</span>
+      </a>
+   </li>
+   <li>
+      <a href="#contractLots" title="http://purl.org/onto-ocds/ocds#contractLots">Contract lots</a>
+   </li>
+   <li>
+      <a href="#contractPeriod" title="http://purl.org/onto-ocds/ocds#contractPeriod">Contract period</a>
+   </li>
+   <li>
+      <a href="#contractStatus" title="http://purl.org/onto-ocds/ocds#contractStatus">Contract status</a>
+   </li>
+   <li>
+      <a href="#contractSuppliers" title="http://purl.org/onto-ocds/ocds#contractSuppliers">Contract Suppliers</a>
+   </li>
+   <li>
+      <a href="#contractValue" title="http://purl.org/onto-ocds/ocds#contractValue">Contract value</a>
+   </li>
+   <li>
+      <a href="#contracts" title="http://purl.org/onto-ocds/ocds#contracts">Contracts</a>
+   </li>
+   <li>
+      <a href="#documentType" title="http://purl.org/onto-ocds/ocds#documentType">Document type</a>
+   </li>
+   <li>
+      <a href="#documentUrl" title="http://purl.org/onto-ocds/ocds#documentUrl">Document URL</a>
+   </li>
+   <li>
+      <a href="#documents" title="http://purl.org/onto-ocds/ocds#documents">Documents</a>
+   </li>
+   <li>
+      <a href="#enquiryPeriod" title="http://purl.org/onto-ocds/ocds#enquiryPeriod">Enquiry period</a>
+   </li>
+   <li>
+      <a href="#former_value" title="http://purl.org/onto-ocds/ocds#former_value">Former value</a>
+   </li>
+   <li>
+      <a href="#identifierScheme" title="http://purl.org/onto-ocds/ocds#identifierScheme">Identifier scheme</a>
+   </li>
+   <li>
+      <a href="#identifierUri" title="http://purl.org/onto-ocds/ocds#identifierUri">Identifier URI</a>
+   </li>
+   <li>
+      <a href="#implementation" title="http://purl.org/onto-ocds/ocds#implementation">Implementation</a>
+   </li>
+   <li>
+      <a href="#implementationDocuments"
+         title="http://purl.org/onto-ocds/ocds#implementationDocuments">Implementation documents</a>
+   </li>
+   <li>
+      <a href="#implementationMilestones"
+         title="http://purl.org/onto-ocds/ocds#implementationMilestones">Implementation milestones</a>
+   </li>
+   <li>
+      <a href="#initiationType" title="http://purl.org/onto-ocds/ocds#initiationType">Initiation Type</a>
+   </li>
+   <li>
+      <a href="#contractItems" title="http://purl.org/onto-ocds/ocds#contractItems">Items Contracted</a>
+   </li>
+   <li>
+      <a href="#tenderItems" title="http://purl.org/onto-ocds/ocds#tenderItems">Items to be procured</a>
+   </li>
+   <li>
+      <a href="#budgetUri" title="http://purl.org/onto-ocds/ocds#budgetUri">Linked budget information</a>
+   </li>
+   <li>
+      <a href="#transactionUri" title="http://purl.org/onto-ocds/ocds#transactionUri">Linked spending information</a>
+   </li>
+   <li>
+      <a href="#lotItems" title="http://purl.org/onto-ocds/ocds#lotItems">
+         <span>lot items</span>
+      </a>
+   </li>
+   <li>
+      <a href="#milestoneDocuments"
+         title="http://purl.org/onto-ocds/ocds#milestoneDocuments">Milestone documents</a>
+   </li>
+   <li>
+      <a href="#milestones" title="http://purl.org/onto-ocds/ocds#milestones">Milestones</a>
+   </li>
+   <li>
+      <a href="#minValue" title="http://purl.org/onto-ocds/ocds#minValue">Minimum value</a>
+   </li>
+   <li>
+      <a href="#identifier" title="http://purl.org/onto-ocds/ocds#identifier">Organization identifier</a>
+   </li>
+   <li>
+      <a href="#planning" title="http://purl.org/onto-ocds/ocds#planning">Planning</a>
+   </li>
+   <li>
+      <a href="#planningPrecedes" title="http://purl.org/onto-ocds/ocds#planningPrecedes">
+         <span>planning precedes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#procurementMethod" title="http://purl.org/onto-ocds/ocds#procurementMethod">Procurement method</a>
+   </li>
+   <li>
+      <a href="#procuringEntity" title="http://purl.org/onto-ocds/ocds#procuringEntity">Procuring entity</a>
+   </li>
+   <li>
+      <a href="#providerOrganization"
+         title="http://purl.org/onto-ocds/ocds#providerOrganization">Provider organization</a>
+   </li>
+   <li>
+      <a href="#receiverOrganization"
+         title="http://purl.org/onto-ocds/ocds#receiverOrganization">Receiver organization</a>
+   </li>
+   <li>
+      <a href="#tag" title="http://purl.org/onto-ocds/ocds#tag">Release Tag</a>
+   </li>
+   <li>
+      <a href="#suppliers" title="http://purl.org/onto-ocds/ocds#suppliers">Suppliers</a>
+   </li>
+   <li>
+      <a href="#tender" title="http://purl.org/onto-ocds/ocds#tender">Tender</a>
+   </li>
+   <li>
+      <a href="#tenderAmendment" title="http://purl.org/onto-ocds/ocds#tenderAmendment">Tender amendment</a>
+   </li>
+   <li>
+      <a href="#tenderDocuments" title="http://purl.org/onto-ocds/ocds#tenderDocuments">Tender documents</a>
+   </li>
+   <li>
+      <a href="#tenderFollows" title="http://purl.org/onto-ocds/ocds#tenderFollows">
+         <span>tender follows</span>
+      </a>
+   </li>
+   <li>
+      <a href="#tenderLots" title="http://purl.org/onto-ocds/ocds#tenderLots">Tender lots</a>
+   </li>
+   <li>
+      <a href="#tenderPeriod" title="http://purl.org/onto-ocds/ocds#tenderPeriod">Tender period</a>
+   </li>
+   <li>
+      <a href="#tenderPrecedes" title="http://purl.org/onto-ocds/ocds#tenderPrecedes">
+         <span>tender precedes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#tenderStatus" title="http://purl.org/onto-ocds/ocds#tenderStatus">Tender Status</a>
+   </li>
+   <li>
+      <a href="#tenderValue" title="http://purl.org/onto-ocds/ocds#tenderValue">Tender value</a>
+   </li>
+   <li>
+      <a href="#tenderers" title="http://purl.org/onto-ocds/ocds#tenderers">Tenderers</a>
+   </li>
+   <li>
+      <a href="#transactionAmount"
+         title="http://purl.org/onto-ocds/ocds#transactionAmount">Transaction amount</a>
+   </li>
+   <li>
+      <a href="#transactionSource"
+         title="http://purl.org/onto-ocds/ocds#transactionSource">Transaction Data Source</a>
+   </li>
+   <li>
+      <a href="#transactions" title="http://purl.org/onto-ocds/ocds#transactions">Transactions</a>
+   </li>
+   <li>
+      <a href="#unit" title="http://purl.org/onto-ocds/ocds#unit">Unit</a>
+   </li>
+   <li>
+      <a href="#unitValue" title="http://purl.org/onto-ocds/ocds#unitValue">Unit value</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#amendmentDate" title="http://purl.org/onto-ocds/ocds#amendmentDate">Amendment Date</a>
+   </li>
+   <li>
+      <a href="#amendmentRationale"
+         title="http://purl.org/onto-ocds/ocds#amendmentRationale">Amendment rationale</a>
+   </li>
+   <li>
+      <a href="#valueAmount" title="http://purl.org/onto-ocds/ocds#valueAmount">Amount</a>
+   </li>
+   <li>
+      <a href="#awardCriteria" title="http://purl.org/onto-ocds/ocds#awardCriteria">Award criteria</a>
+   </li>
+   <li>
+      <a href="#awardCriteriaDetails"
+         title="http://purl.org/onto-ocds/ocds#awardCriteriaDetails">Award criteria details</a>
+   </li>
+   <li>
+      <a href="#awardDate" title="http://purl.org/onto-ocds/ocds#awardDate">Award date</a>
+   </li>
+   <li>
+      <a href="#awardDescription" title="http://purl.org/onto-ocds/ocds#awardDescription">Award description</a>
+   </li>
+   <li>
+      <a href="#awardId" title="http://purl.org/onto-ocds/ocds#awardId">Award ID</a>
+   </li>
+   <li>
+      <a href="#awardTitle" title="http://purl.org/onto-ocds/ocds#awardTitle">Award title</a>
+   </li>
+   <li>
+      <a href="#awardURL" title="http://purl.org/onto-ocds/ocds#awardURL">
+         <span>award u r l</span>
+      </a>
+   </li>
+   <li>
+      <a href="#budgetDescription"
+         title="http://purl.org/onto-ocds/ocds#budgetDescription">
+         <span>budget description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#budgetId" title="http://purl.org/onto-ocds/ocds#budgetId">Budget ID</a>
+   </li>
+   <li>
+      <a href="#classificationDescription"
+         title="http://purl.org/onto-ocds/ocds#classificationDescription">Classification description</a>
+   </li>
+   <li>
+      <a href="#classificationId" title="http://purl.org/onto-ocds/ocds#classificationId">Classification ID</a>
+   </li>
+   <li>
+      <a href="#contactPointName" title="http://purl.org/onto-ocds/ocds#contactPointName">Contact point name</a>
+   </li>
+   <li>
+      <a href="#contractDescription"
+         title="http://purl.org/onto-ocds/ocds#contractDescription">Contract description</a>
+   </li>
+   <li>
+      <a href="#contractId" title="http://purl.org/onto-ocds/ocds#contractId">Contract ID</a>
+   </li>
+   <li>
+      <a href="#contractTitle" title="http://purl.org/onto-ocds/ocds#contractTitle">Contract title</a>
+   </li>
+   <li>
+      <a href="#countryName" title="http://purl.org/onto-ocds/ocds#countryName">Country name</a>
+   </li>
+   <li>
+      <a href="#currency" title="http://purl.org/onto-ocds/ocds#currency">Currency</a>
+   </li>
+   <li>
+      <a href="#dncpContractCode" title="http://purl.org/onto-ocds/ocds#dncpContractCode">Código de contrato</a>
+   </li>
+   <li>
+      <a href="#dateSigned" title="http://purl.org/onto-ocds/ocds#dateSigned">Date of signature</a>
+   </li>
+   <li>
+      <a href="#documentDescription"
+         title="http://purl.org/onto-ocds/ocds#documentDescription">Document description</a>
+   </li>
+   <li>
+      <a href="#documentId" title="http://purl.org/onto-ocds/ocds#documentId">Document ID</a>
+   </li>
+   <li>
+      <a href="#documentLanguage" title="http://purl.org/onto-ocds/ocds#documentLanguage">Document language</a>
+   </li>
+   <li>
+      <a href="#documentDateModified"
+         title="http://purl.org/onto-ocds/ocds#documentDateModified">Document modification date</a>
+   </li>
+   <li>
+      <a href="#documentTitle" title="http://purl.org/onto-ocds/ocds#documentTitle">Document title</a>
+   </li>
+   <li>
+      <a href="#dueDate" title="http://purl.org/onto-ocds/ocds#dueDate">Due date</a>
+   </li>
+   <li>
+      <a href="#eligibilityCriteria"
+         title="http://purl.org/onto-ocds/ocds#eligibilityCriteria">Eligibility criteria</a>
+   </li>
+   <li>
+      <a href="#email" title="http://purl.org/onto-ocds/ocds#email">Email</a>
+   </li>
+   <li>
+      <a href="#endDate" title="http://purl.org/onto-ocds/ocds#endDate">End date</a>
+   </li>
+   <li>
+      <a href="#faxNumber" title="http://purl.org/onto-ocds/ocds#faxNumber">Fax number</a>
+   </li>
+   <li>
+      <a href="#format" title="http://purl.org/onto-ocds/ocds#format">Format</a>
+   </li>
+   <li>
+      <a href="#hasEnquiries" title="http://purl.org/onto-ocds/ocds#hasEnquiries">Has enquiries</a>
+   </li>
+   <li>
+      <a href="#identifierId" title="http://purl.org/onto-ocds/ocds#identifierId">Identifier ID</a>
+   </li>
+   <li>
+      <a href="#itemDescription" title="http://purl.org/onto-ocds/ocds#itemDescription">Item description</a>
+   </li>
+   <li>
+      <a href="#itemId" title="http://purl.org/onto-ocds/ocds#itemId">Item ID</a>
+   </li>
+   <li>
+      <a href="#legalName" title="http://purl.org/onto-ocds/ocds#legalName">Legal name</a>
+   </li>
+   <li>
+      <a href="#locality" title="http://purl.org/onto-ocds/ocds#locality">Locality</a>
+   </li>
+   <li>
+      <a href="#lotId" title="http://purl.org/onto-ocds/ocds#lotId">
+         <span>lot id</span>
+      </a>
+   </li>
+   <li>
+      <a href="#lotTitle" title="http://purl.org/onto-ocds/ocds#lotTitle">
+         <span>lot title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#milestoneDescription"
+         title="http://purl.org/onto-ocds/ocds#milestoneDescription">Milestone description</a>
+   </li>
+   <li>
+      <a href="#milestoneId" title="http://purl.org/onto-ocds/ocds#milestoneId">Milestone ID</a>
+   </li>
+   <li>
+      <a href="#milestoneDateModified"
+         title="http://purl.org/onto-ocds/ocds#milestoneDateModified">Milestone modification date</a>
+   </li>
+   <li>
+      <a href="#milestoneStatus" title="http://purl.org/onto-ocds/ocds#milestoneStatus">Milestone status</a>
+   </li>
+   <li>
+      <a href="#milestoneTitle" title="http://purl.org/onto-ocds/ocds#milestoneTitle">Milestone title</a>
+   </li>
+   <li>
+      <a href="#numberOfTenderers"
+         title="http://purl.org/onto-ocds/ocds#numberOfTenderers">Number of tenders</a>
+   </li>
+   <li>
+      <a href="#ocid" title="http://purl.org/onto-ocds/ocds#ocid">Open Contracting ID</a>
+   </li>
+   <li>
+      <a href="#organizationName" title="http://purl.org/onto-ocds/ocds#organizationName">Organization name</a>
+   </li>
+   <li>
+      <a href="#planningRationale"
+         title="http://purl.org/onto-ocds/ocds#planningRationale">Planning rationale</a>
+   </li>
+   <li>
+      <a href="#planningUrl" title="http://purl.org/onto-ocds/ocds#planningUrl">Planning URL</a>
+   </li>
+   <li>
+      <a href="#postalCode" title="http://purl.org/onto-ocds/ocds#postalCode">Postal code</a>
+   </li>
+   <li>
+      <a href="#procurementMethodRationale"
+         title="http://purl.org/onto-ocds/ocds#procurementMethodRationale">Procurement method rationale</a>
+   </li>
+   <li>
+      <a href="#projectID" title="http://purl.org/onto-ocds/ocds#projectID">Project Identifier</a>
+   </li>
+   <li>
+      <a href="#project" title="http://purl.org/onto-ocds/ocds#project">Project Title</a>
+   </li>
+   <li>
+      <a href="#property" title="http://purl.org/onto-ocds/ocds#property">Property</a>
+   </li>
+   <li>
+      <a href="#datePublished" title="http://purl.org/onto-ocds/ocds#datePublished">Publication date</a>
+   </li>
+   <li>
+      <a href="#quantity" title="http://purl.org/onto-ocds/ocds#quantity">quantity</a>
+   </li>
+   <li>
+      <a href="#region" title="http://purl.org/onto-ocds/ocds#region">Region</a>
+   </li>
+   <li>
+      <a href="#releaseDate" title="http://purl.org/onto-ocds/ocds#releaseDate">Release Date</a>
+   </li>
+   <li>
+      <a href="#id" title="http://purl.org/onto-ocds/ocds#id">Release ID</a>
+   </li>
+   <li>
+      <a href="#releaseLanguage" title="http://purl.org/onto-ocds/ocds#releaseLanguage">Release language</a>
+   </li>
+   <li>
+      <a href="#startDate" title="http://purl.org/onto-ocds/ocds#startDate">Start date</a>
+   </li>
+   <li>
+      <a href="#streetAddress" title="http://purl.org/onto-ocds/ocds#streetAddress">Street address</a>
+   </li>
+   <li>
+      <a href="#submissionMethod" title="http://purl.org/onto-ocds/ocds#submissionMethod">Submission method</a>
+   </li>
+   <li>
+      <a href="#submissionMethodDetails"
+         title="http://purl.org/onto-ocds/ocds#submissionMethodDetails">Submission method details</a>
+   </li>
+   <li>
+      <a href="#telephone" title="http://purl.org/onto-ocds/ocds#telephone">Telephone</a>
+   </li>
+   <li>
+      <a href="#tenderDescription"
+         title="http://purl.org/onto-ocds/ocds#tenderDescription">Tender description</a>
+   </li>
+   <li>
+      <a href="#tenderId" title="http://purl.org/onto-ocds/ocds#tenderId">Tender ID</a>
+   </li>
+   <li>
+      <a href="#tenderTitle" title="http://purl.org/onto-ocds/ocds#tenderTitle">Tender title</a>
+   </li>
+   <li>
+      <a href="#tenderUrl" title="http://purl.org/onto-ocds/ocds#tenderUrl">Tender URL</a>
+   </li>
+   <li>
+      <a href="#transactionDate" title="http://purl.org/onto-ocds/ocds#transactionDate">Transaction date</a>
+   </li>
+   <li>
+      <a href="#transactionId" title="http://purl.org/onto-ocds/ocds#transactionId">Transaction ID</a>
+   </li>
+   <li>
+      <a href="#unitName" title="http://purl.org/onto-ocds/ocds#unitName">Unit name</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#awardStatusActive"
+         title="http://purl.org/onto-ocds/ocds#awardStatusActive">active</a>
+   </li>
+   <li>
+      <a href="#contractStatusActive"
+         title="http://purl.org/onto-ocds/ocds#contractStatusActive">active</a>
+   </li>
+   <li>
+      <a href="#tenderStatusActive"
+         title="http://purl.org/onto-ocds/ocds#tenderStatusActive">active</a>
+   </li>
+   <li>
+      <a href="#ois_AF-CBR" title="http://purl.org/onto-ocds/ocds#ois_AF-CBR">AF-CBR</a>
+   </li>
+   <li>
+      <a href="#ois_AF-MOE" title="http://purl.org/onto-ocds/ocds#ois_AF-MOE">AF-MOE</a>
+   </li>
+   <li>
+      <a href="#releaseTagAward" title="http://purl.org/onto-ocds/ocds#releaseTagAward">award</a>
+   </li>
+   <li>
+      <a href="#releaseTagAwardCancellation"
+         title="http://purl.org/onto-ocds/ocds#releaseTagAwardCancellation">awardCancellation</a>
+   </li>
+   <li>
+      <a href="#documentTypeAwardNotice"
+         title="http://purl.org/onto-ocds/ocds#documentTypeAwardNotice">awardNotice</a>
+   </li>
+   <li>
+      <a href="#releaseTagAwardUpdate"
+         title="http://purl.org/onto-ocds/ocds#releaseTagAwardUpdate">awardUpdate</a>
+   </li>
+   <li>
+      <a href="#awardCriteriaBestProposal"
+         title="http://purl.org/onto-ocds/ocds#awardCriteriaBestProposal">bestProposal</a>
+   </li>
+   <li>
+      <a href="#awardCriteriaBestValueToGovernment"
+         title="http://purl.org/onto-ocds/ocds#awardCriteriaBestValueToGovernment">bestValueToGovernment</a>
+   </li>
+   <li>
+      <a href="#awardStatusCancelled"
+         title="http://purl.org/onto-ocds/ocds#awardStatusCancelled">cancelled</a>
+   </li>
+   <li>
+      <a href="#contractStatusCancelled"
+         title="http://purl.org/onto-ocds/ocds#contractStatusCancelled">cancelled</a>
+   </li>
+   <li>
+      <a href="#tenderStatusCancelled"
+         title="http://purl.org/onto-ocds/ocds#tenderStatusCancelled">cancelled</a>
+   </li>
+   <li>
+      <a href="#ics_CDNCP" title="http://purl.org/onto-ocds/ocds#ics_CDNCP">CDNCP</a>
+   </li>
+   <li>
+      <a href="#releaseTagCompiled"
+         title="http://purl.org/onto-ocds/ocds#releaseTagCompiled">compiled</a>
+   </li>
+   <li>
+      <a href="#tenderStatusComplete"
+         title="http://purl.org/onto-ocds/ocds#tenderStatusComplete">complete</a>
+   </li>
+   <li>
+      <a href="#releaseTagContract"
+         title="http://purl.org/onto-ocds/ocds#releaseTagContract">contract</a>
+   </li>
+   <li>
+      <a href="#releaseTagContractAmendment"
+         title="http://purl.org/onto-ocds/ocds#releaseTagContractAmendment">contractAmendment</a>
+   </li>
+   <li>
+      <a href="#releaseTagContractTermination"
+         title="http://purl.org/onto-ocds/ocds#releaseTagContractTermination">contractTermination</a>
+   </li>
+   <li>
+      <a href="#releaseTagContractUpdate"
+         title="http://purl.org/onto-ocds/ocds#releaseTagContractUpdate">contractUpdate</a>
+   </li>
+   <li>
+      <a href="#ics_CPV" title="http://purl.org/onto-ocds/ocds#ics_CPV">CPV</a>
+   </li>
+   <li>
+      <a href="#ics_CPVS" title="http://purl.org/onto-ocds/ocds#ics_CPVS">CPVS</a>
+   </li>
+   <li>
+      <a href="#submissionMethodElectronicAuction"
+         title="http://purl.org/onto-ocds/ocds#submissionMethodElectronicAuction">electronicAuction</a>
+   </li>
+   <li>
+      <a href="#submissionMethodElectronicSubmission"
+         title="http://purl.org/onto-ocds/ocds#submissionMethodElectronicSubmission">electronicSubmission</a>
+   </li>
+   <li>
+      <a href="#ics_GSIN" title="http://purl.org/onto-ocds/ocds#ics_GSIN">GSIN</a>
+   </li>
+   <li>
+      <a href="#releaseTagImplementation"
+         title="http://purl.org/onto-ocds/ocds#releaseTagImplementation">implementation</a>
+   </li>
+   <li>
+      <a href="#releaseTagImplementationUpdate"
+         title="http://purl.org/onto-ocds/ocds#releaseTagImplementationUpdate">implementationUpdate</a>
+   </li>
+   <li>
+      <a href="#submissionMethodInPerson"
+         title="http://purl.org/onto-ocds/ocds#submissionMethodInPerson">inPerson</a>
+   </li>
+   <li>
+      <a href="#methodLimited" title="http://purl.org/onto-ocds/ocds#methodLimited">limited</a>
+   </li>
+   <li>
+      <a href="#awardCriteriaLowestCost"
+         title="http://purl.org/onto-ocds/ocds#awardCriteriaLowestCost">lowestCost</a>
+   </li>
+   <li>
+      <a href="#methodOpen" title="http://purl.org/onto-ocds/ocds#methodOpen">open</a>
+   </li>
+   <li>
+      <a href="#awardStatusPending"
+         title="http://purl.org/onto-ocds/ocds#awardStatusPending">pending</a>
+   </li>
+   <li>
+      <a href="#contractStatusPending"
+         title="http://purl.org/onto-ocds/ocds#contractStatusPending">pending</a>
+   </li>
+   <li>
+      <a href="#tenderStatusPlanned"
+         title="http://purl.org/onto-ocds/ocds#tenderStatusPlanned">planned</a>
+   </li>
+   <li>
+      <a href="#releaseTagPlanning"
+         title="http://purl.org/onto-ocds/ocds#releaseTagPlanning">planning</a>
+   </li>
+   <li>
+      <a href="#methodSelective" title="http://purl.org/onto-ocds/ocds#methodSelective">selective</a>
+   </li>
+   <li>
+      <a href="#awardCriteriaSingleBidOnly"
+         title="http://purl.org/onto-ocds/ocds#awardCriteriaSingleBidOnly">singleBidOnly</a>
+   </li>
+   <li>
+      <a href="#initiationTypeTender"
+         title="http://purl.org/onto-ocds/ocds#initiationTypeTender">tender</a>
+   </li>
+   <li>
+      <a href="#releaseTagTender" title="http://purl.org/onto-ocds/ocds#releaseTagTender">tender</a>
+   </li>
+   <li>
+      <a href="#releaseTagTenderAmendment"
+         title="http://purl.org/onto-ocds/ocds#releaseTagTenderAmendment">tenderAmendment</a>
+   </li>
+   <li>
+      <a href="#releaseTagTenderCancellation"
+         title="http://purl.org/onto-ocds/ocds#releaseTagTenderCancellation">tenderCancellation</a>
+   </li>
+   <li>
+      <a href="#documentTypeTenderNotice"
+         title="http://purl.org/onto-ocds/ocds#documentTypeTenderNotice">tenderNotice</a>
+   </li>
+   <li>
+      <a href="#releaseTagTenderUpdate"
+         title="http://purl.org/onto-ocds/ocds#releaseTagTenderUpdate">tenderUpdate</a>
+   </li>
+   <li>
+      <a href="#contractStatusTerminated"
+         title="http://purl.org/onto-ocds/ocds#contractStatusTerminated">terminated</a>
+   </li>
+   <li>
+      <a href="#ics_UNSPSC" title="http://purl.org/onto-ocds/ocds#ics_UNSPSC">UNSPSC</a>
+   </li>
+   <li>
+      <a href="#awardStatusUnsuccessful"
+         title="http://purl.org/onto-ocds/ocds#awardStatusUnsuccessful">unsuccessful</a>
+   </li>
+   <li>
+      <a href="#tenderStatusUnsuccessful"
+         title="http://purl.org/onto-ocds/ocds#tenderStatusUnsuccessful">unsuccessful</a>
+   </li>
+   <li>
+      <a href="#submissionMethodWritten"
+         title="http://purl.org/onto-ocds/ocds#submissionMethodWritten">written</a>
+   </li>
+</ul>
